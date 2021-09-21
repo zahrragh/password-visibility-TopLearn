@@ -23,17 +23,20 @@ body {
     height: 100vh;
 }
 
-.password {
+.password-box {
     width: 15%;
     position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.password input{
+.password-box input{
     outline: none;
     padding: 10px;
     font-size: 19px;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    color: rgb(168, 168, 168);
 }
 .toggle {
     position: absolute;
@@ -51,4 +54,11 @@ body {
     display: none;
     font-size: 25px;
     cursor: pointer;
+}
+
+.toggle.hide .fa-eye-slash{
+    display: block;
+}
+.toggle.hide .fa-eye{
+    display: none;
 }
