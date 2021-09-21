@@ -1,23 +1,54 @@
 @font-face {
     font-family: 'vazir';
-    src: url('../fonts/vazir.eot'); 
-    src: url('../fonts/vazir.ttf')  format('truetype'), 
-         url('../fonts/vazir.woff2') format('woff2'), 
-         url('../fonts/vazir.woff') format('woff');
-  }
+    src: url('../fonts/vazir.eot');
+    src: url('../fonts/vazir.ttf') format('truetype'),
+        url('../fonts/vazir.woff2') format('woff2'),
+        url('../fonts/vazir.woff') format('woff');
+}
 
-  *{
-      padding: 0;
-      margin: 0;
-  }
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'vazir';
+}
 
 
-  body{
-      font-family: 'vazir';
-      direction: rtl;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-  }
+body {
+    font-family: 'vazir';
+    direction: rtl;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.password {
+    width: 15%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.password input{
+    outline: none;
+    padding: 10px;
+    font-size: 19px;
+}
+.toggle {
+    position: absolute;
+    right: -50px;
+    top: 15px;
+}
+.toggle .fa-eye{
+    position: absolute;
+    color: rgb(168, 168, 168);
+    font-size: 25px;
+    cursor: pointer;
+}
+.toggle .fa-eye-slash{
+    color: rgb(168, 168, 168);
+    display: none;
+    font-size: 25px;
+    cursor: pointer;
+}
